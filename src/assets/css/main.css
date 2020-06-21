@@ -1,0 +1,50 @@
+@import "./tailwind.css";
+
+:root {
+    --preview-image-title-size: 2rem;
+    --preview-image-subtitle-size: 1.5rem;
+    --sharizard-orange: #ee8327;
+    --sharizard-teal: #227394;
+    --header-height: 64px;
+}
+
+.preview-image {
+    font-size: var(--preview-image-title-size);
+}
+
+.container {
+    @apply mx-auto max-w-content px-2;
+}
+
+.vue-swatches__trigger {
+    border: 1px gray solid;
+  }
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.preview-image {
+  transition: color 0.5s, background-color 0.5s;
+}
+
+.section h1,.section h2,.section h3,.section h4,.section h5,.section h6,.section p {
+  @apply mb-2;
+}
+.section h1 {
+  @apply text-3xl;
+}
+.section h2 {
+  @apply text-2xl;
+}
+.section h3 {
+  @apply text-xl;
+}
+.section h1,.section h2,.section h3 {
+  @apply font-bold;
+}
